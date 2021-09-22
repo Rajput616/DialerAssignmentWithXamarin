@@ -2,17 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dialer_Assignment.MainPage" BackgroundColor="#354242"
-             Padding="20,100,20,20">
+             Padding="42,190,42,20">
 
     <StackLayout>
-        <Grid RowSpacing="10" ColumnSpacing="10">
+        <Grid RowSpacing="15" ColumnSpacing="15">
             <Grid.RowDefinitions>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -33,7 +33,7 @@
             <Button Grid.Row="4" Grid.Column="0" Text="*" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" CornerRadius="30" Clicked="Button_Clicked"/>
             <Button Grid.Row="4" Grid.Column="1" Text="0" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" CornerRadius="30" Clicked="Button_Clicked"/>
             <Button Grid.Row="4" Grid.Column="2" Text="C" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" CornerRadius="30" Clicked="Button_Clicked"/>
-            <Button Grid.Row="5" Grid.ColumnSpan="3" Text="Dial" BackgroundColor="#96ca2d" CornerRadius="30" />
+            <Button Grid.Row="5" Grid.ColumnSpan="3" Text="Dial" TextTransform="None" FontSize="30" BackgroundColor="#96ca2d" CornerRadius="30" />
         </Grid>
     </StackLayout>
 

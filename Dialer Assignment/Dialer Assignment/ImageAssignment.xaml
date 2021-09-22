@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dialer_Assignment.ImageAssignment" BackgroundColor="Black">
+    <StackLayout>
+        <AbsoluteLayout Padding="20">
+            <Button 
+                ImageSource="leftIcon.png" 
+                BackgroundColor="Black" 
+                AbsoluteLayout.LayoutFlags="PositionProportional" 
+                AbsoluteLayout.LayoutBounds="0,0.1"
+                Clicked="Button_Clicked_Left"/>
+            <ActivityIndicator  
+                Color="White"
+                IsRunning="{Binding Source={x:Reference imageView}, Path=IsLoading}" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,1"/>
+            <Button 
+                ImageSource="rightIcon.png" 
+                BackgroundColor="Black" 
+                AbsoluteLayout.LayoutFlags="PositionProportional" 
+                AbsoluteLayout.LayoutBounds="1,0.1"
+                Clicked="Button_Clicked_Right"/>
+
+        </AbsoluteLayout>
+        
+        <Image Margin="0,180"  x:Name="imageView" Aspect="AspectFit"/>
+    </StackLayout>
+</ContentPage>

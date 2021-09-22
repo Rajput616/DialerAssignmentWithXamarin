@@ -14,6 +14,7 @@ namespace Dialer_Assignment
         public MainPage()
         {
             InitializeComponent();
+            
         }
 
         private void Button_Clicked(object sender, EventArgs e)

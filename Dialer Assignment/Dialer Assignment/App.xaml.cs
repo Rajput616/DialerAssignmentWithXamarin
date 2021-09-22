@@ -10,7 +10,7 @@ namespace Dialer_Assignment
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new ImageAssignment();
         }
 
         protected override void OnStart()
