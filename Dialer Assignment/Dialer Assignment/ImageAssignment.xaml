@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dialer_Assignment.ImageAssignment" BackgroundColor="Black">
     <AbsoluteLayout>
-        <StackLayout Margin="20" AbsoluteLayout.LayoutFlags="All" 
+        <StackLayout Margin="15" AbsoluteLayout.LayoutFlags="All" 
                 AbsoluteLayout.LayoutBounds="0.01, 0.01,1,0.16"  Orientation="Horizontal">
-            <Button HorizontalOptions="Start"
+            <Button 
                 ImageSource="leftIcon.png" 
                 BackgroundColor="Black"
                 Clicked="Button_Clicked_Left"/>
@@ -13,7 +13,7 @@
                 Color="White"
                 IsRunning="{Binding Source={x:Reference imageView}, Path=IsLoading}" 
                 />
-            <Button HorizontalOptions="End"
+            <Button 
                 ImageSource="rightIcon.png" 
                 BackgroundColor="Black" 
                 Clicked="Button_Clicked_Right"/>
